@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Anniversary Ramsii ❤️</title>
+
+<style>
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Georgia,serif;
+  background:linear-gradient(135deg,#fff0f5,#ffe4ec,#fff7f9);
+  color:#4a2632;
+  overflow-x:hidden;
+}
+
+.section{
+  min-height:100vh;
+  display:none;
+  padding:35px 20px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+}
+
+.section.active{
+  display:flex;
+  animation:cardIn 1s ease;
+}
+
+.card{
+  width:min(900px,95%);
+  padding:35px 25px;
+  border-radius:30px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 15px 50px rgba(130,50,80,.18);
+  backdrop-filter:blur(8px);
+}
+
+h1{
+  font-size:clamp(42px,9vw,80px);
+  color:#b52f5b;
+  margin-bottom:15px;
+  animation:beat 2s infinite;
+}
+
+h2{
+  font-size:clamp(28px,6vw,48px);
+  color:#b52f5b;
+  margin-bottom:20px;
+}
+
+h3{
+  color:#a82e56;
+  margin-bottom:10px;
+}
+
+p{
+  font-size:18px;
+  line-height:1.8;
+  margin:12px auto;
+  max-width:760px;
+}
+
+.date{
+  font-size:20px;
+  color:#8f3b59;
+  margin-bottom:20px;
+}
+
+button{
+  border:none;
+  padding:14px 25px;
+  margin:10px 5px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#d94372,#b52f5b);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow:0 7px 20px rgba(181,47,91,.25);
+  transition:.3s;
+}
+
+button:hover{
+  transform:translateY(-3px) scale(1.03);
+}
+
+.musicBox{
+  margin:25px auto;
+  padding:20px;
+  max-width:500px;
+  border-radius:25px;
+  background:#fff4f7;
+  box-shadow:0 8px 25px rgba(130,50,80,.12);
+}
+
+.musicIcon{
+  font-size:45px;
+  animation:pulseBox 1.5s infinite;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  max-width:700px;
+  margin:25px auto;
+}
+
+.gallery img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:22px;
+  box-shadow:0 8px 25px rgba(100,40,70,.2);
+  transition:.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.03);
+}
+
+.memory{
+  background:#fff6f8;
+  margin:15px auto;
+  padding:20px;
+  border-radius:22px;
+  max-width:700px;
+}
+
+.names{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+  margin:25px auto;
+  max-width:700px;
+}
+
+.nameBox{
+  padding:20px;
+  background:#fff5f7;
+  border-radius:20px;
+}
+
+.envelope{
+  width:280px;
+  height:180px;
+  margin:30px auto;
+  position:relative;
+  cursor:pointer;
+  perspective:700px;
+}
+
+.envelopeBody{
+  width:100%;
+  height:100%;
+  background:#e9a0b6;
+  border-radius:8px;
+  position:absolute;
+  box-shadow:0 10px 25px rgba(120,40,70,.2);
+}
+
+.envelopeFlap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:0;
+  border-left:140px solid transparent;
+  border-right:140px solid transparent;
+  border-top:100px solid #d87998;
+  transform-origin:top;
+  transition:.7s;
+  z-index:3;
+}
+
+.envelope.opened .envelopeFlap{
+  transform:rotateX(180deg);
+}
+
+.envelopeText{
+  position:absolute;
+  top:75px;
+  width:100%;
+  text-align:center;
+  color:white;
+  font-size:20px;
+  z-index:2;
+}
+
+.secretLetter{
+  display:none;
+  opacity:0;
+  transform:translateY(20px);
+  transition:.5s;
+  background:#fff8fa;
+  padding:25px;
+  border-radius:22px;
+  margin:20px auto;
+  max-width:700px;
+}
+
+.surpriseBox{
+  margin:25px auto;
+  padding:25px;
+  max-width:700px;
+  border-radius:25px;
+  background:#fff1f5;
+  box-shadow:0 10px 30px rgba(120,40,70,.15);
+  animation:appear .8s ease;
+}
+
+.rose{
+  font-size:55px;
+  animation:roseFloat 2s infinite;
+}
+
+footer{
+  margin-top:30px;
+  font-size:14px;
+  color:#8f5368;
+}
+
+@keyframes cardIn{
+  from{
+    opacity:0;
+    transform:translateY(35px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes beat{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.04);}
+}
+
+@keyframes pulseBox{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.15);}
+}
+
+@keyframes appear{
+  from{
+    opacity:0;
+    transform:scale(.9);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes roseFloat{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-8px);}
+}
+
+@keyframes floatUp{
+  from{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+  to{
+    opacity:0;
+    transform:translateY(-120px) scale(1.6);
+  }
+}
+
+@media(max-width:600px){
+
+  .section{
+    padding:25px 12px;
+  }
+
+  .card{
+    padding:28px 16px;
+  }
+
+  p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .gallery img{
+    height:300px;
+  }
+
+  .names{
+    grid-template-columns:1fr;
+  }
+
+  .envelope{
+    transform:scale(.85);
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="song" preload="auto">
+  <source src="our-song.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- HOME -->
+
+<section id="home" class="section active">
+
+<div class="card">
+
+<h1>Ramsii ❤️</h1>
+
+<div class="date">
+16 September 2024 — Our Special Day
+</div>
+
+<p>
+Some dates are just dates...
+but some dates become a beautiful part of our heart.
+</p>
+
+<p>
+For me, <b>16 September</b> will always be special
+because it reminds me of the beginning of our beautiful journey. ❤️
+</p>
+
+<div class="musicBox">
+
+<div class="musicIcon">🎵</div>
+
+<h3>Our Little Song</h3>
+
+<p id="musicText">
+Tap the button and let our song play ❤️
+</p>
+
+<button onclick="playSong()">
+▶️ Play Our Song
+</button>
+
+</div>
+
+<button onclick="go('letter')">
+💌 Open My Letter
+</button>
+
+</div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section id="letter" class="section">
+
+<div class="card">
+
+<h2>My Apology To You ❤️</h2>
+
+<p>
+Ramsii, I know that sometimes my anger becomes bigger
+than my patience.
+</p>
+
+<p>
+I know there were moments when you were already sad
+and instead of comforting you,
+I became angry and made things even harder for you.
+</p>
+
+<p>
+I am truly sorry for making you cry,
+for making you feel alone,
+and for not being the person you needed
+in those moments.
+</p>
+
+<p>
+<b>Praneshwari...</b><br>
+<b>Pran Vallabha...</b>
+</p>
+
+<p>
+I don't want our beautiful memories to be filled
+with arguments and ego.
+I want more moments where we laugh,
+talk peacefully,
+pamper each other,
+and simply enjoy being together.
+</p>
+
+<p>
+I cannot change what already happened,
+but I can choose how I treat you from now on.
+</p>
+
+<p>
+And today,
+I just want to say one simple thing...
+</p>
+
+<h2>I'm Sorry, Ramsii ❤️</h2>
+
+<button onclick="go('gujarati')">
+❤️ Ek Dil Ni Vaat
+</button>
+
+</div>
+
+</section>
+
+
+<!-- GUJARATI -->
+
+<section id="gujarati" class="section">
+
+<div class="card">
+
+<h2>Ramsii... Ek Vaat ❤️</h2>
+
+<p>
+Jindagi chaar divas ni hoy chhe...
+</p>
+
+<p>
+Ema thi tran divas toh aapde ek bija sathe ladta,
+naraj thata,
+ane ek bija thi dur thai ne pasar kari daiye chhiye...
+</p>
+
+<p>
+Toh pachi shu jarur chhe aatlu badhu ladva ni?
+</p>
+
+<p>
+Mane bas etlu j joie chhe ke
+aapde ek bija sathe thodu vadhu smile kariye,
+thodu vadhu pamper kariye,
+shanti thi vaat kariye
+ane ek bija ne sukoon aapiye. ❤️
+</p>
+
+<p>
+Hu pan perfect nathi...
+pan hu better banva mangu chhu.
+</p>
+
+<p>
+Tara mate,
+aapda mate,
+ane aapdi aa beautiful journey mate. ❤️
+</p>
+
+<button onclick="gujaratiSurprise()">
+❤️ Haan, aaje thi sukoon
+</button>
+
+<div id="gujaratiSurprise"></div>
+
+<button onclick="go('envelope')">
+💌 Ek Secret Letter
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ENVELOPE -->
+
+<section id="envelope" class="section">
+
+<div class="card">
+
+<h2>For My Ramsii 💌</h2>
+
+<p>
+There is something inside this envelope
+that I want you to read slowly...
+</p>
+
+<div class="envelope" id="envelopeBox" onclick="openEnvelope()">
+
+<div class="envelopeBody"></div>
+
+<div class="envelopeFlap"></div>
+
+<div class="envelopeText">
+Tap To Open ❤️
+</div>
+
+</div>
+
+<div id="secretLetter" class="secretLetter">
+
+<h3>My Little Secret ❤️</h3>
+
+<p>
+If I could go back to every moment
+where I made you sad,
+I would choose to hold your hand
+instead of arguing.
+</p>
+
+<p>
+If I could go back to every moment
+where you needed comfort,
+I would choose to stay beside you
+instead of letting my anger speak.
+</p>
+
+<p>
+Because at the end of the day,
+winning an argument means nothing
+if the person you love is hurting.
+</p>
+
+<p>
+I want your heart to feel safe with me,
+not tired because of me.
+</p>
+
+<p>
+That's the kind of love
+I want to build with you. ❤️
+</p>
+
+</div>
+
+<button onclick="go('memories')">
+📸 Our Memories
+</button>
+
+</div>
+
+</section>
+
+
+<!-- MEMORIES -->
+
+<section id="memories" class="section">
+
+<div class="card">
+
+<h2>Our Little Memories 📸</h2>
+
+<div class="memory">
+
+<h3>🌙 16 September 2024</h3>
+
+<p>
+That late-night Instagram beginning...
+a simple conversation
+that slowly became something special.
+</p>
+
+</div>
+
+<div class="memory">
+
+<h3>🛕 December 2024 — Dwarka</h3>
+
+<p>
+A beautiful memory connected with Dwarka,
+a place that will always remind me
+of moments that became precious to us.
+</p>
+
+</div>
+
+<div class="memory">
+
+<h3>🎂 Our Cake Celebration</h3>
+
+<p>
+That little celebration,
+that cake,
+those smiles...
+sometimes the smallest moments
+become our biggest memories.
+</p>
+
+</div>
+
+<div class="memory">
+
+<h3>😂 The Little Things</h3>
+
+<p>
+Random conversations,
+silly jokes,
+fights,
+making up,
+laughing,
+and those late-night talks...
+</p>
+
+<p>
+These little things are what make
+our story ours. ❤️
+</p>
+
+</div>
+
+<button onclick="go('gallery')">
+🖼️ See Our Pictures
+</button>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery" class="section">
+
+<div class="card">
+
+<h2>Our Pictures ❤️</h2>
+
+<p>
+A few pictures,
+a thousand memories.
+</p>
+
+<div class="gallery">
+
+<img src="photo1.jpg" alt="Our memory">
+
+<img src="photo2.jpg" alt="Our memory">
+
+<img src="dwarka.jpg" alt="Dwarka memory">
+
+<img src="cake.jpg" alt="Cake celebration">
+
+</div>
+
+<button onclick="go('names')">
+❤️ What You Mean To Me
+</button>
+
+</div>
+
+</section>
+
+
+<!-- NAMES -->
+
+<section id="names" class="section">
+
+<div class="card">
+
+<h2>Your Many Names ❤️</h2>
+
+<p>
+Some people have one name...
+but the person who becomes special
+gets many names from the heart.
+</p>
+
+<div class="names">
+
+<div class="nameBox">
+
+<h3>Ramsii ❤️</h3>
+
+<p>
+The name that instantly brings
+a smile to my face.
+</p>
+
+</div>
+
+<div class="nameBox">
+
+<h3>Praneshwari 🌹</h3>
+
+<p>
+A name that feels precious,
+soft and close to my heart.
+</p>
+
+</div>
+
+<div class="nameBox">
+
+<h3>Pran Vallabha ❤️</h3>
+
+<p>
+The one who holds
+a very special place in my heart.
+</p>
+
+</div>
+
+<div class="nameBox">
+
+<h3>Priyadarshini ✨</h3>
+
+<p>
+The one whose presence
+always feels beautiful to me.
+</p>
+
+</div>
+
+</div>
+
+<button onclick="go('promise')">
+🤝 My Promise
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PROMISE -->
+
+<section id="promise" class="section">
+
+<div class="card">
+
+<h2>My Promise To You 🤝❤️</h2>
+
+<p>
+I am not promising you perfection.
+</p>
+
+<p>
+I am promising that I will keep trying
+to become a better version of myself.
+</p>
+
+<p>
+When you are hurt,
+I will try to understand you
+instead of immediately defending myself.
+</p>
+
+<p>
+When there is an argument,
+I will remember that your feelings
+are more important than my ego.
+</p>
+
+<p>
+I will try to show my love through actions,
+not only through beautiful words.
+</p>
+
+<p>
+And whenever life feels heavy,
+I want to be someone
+who makes your heart a little lighter.
+</p>
+
+<p>
+Most importantly...
+</p>
+
+<p>
+<b>
+I want to be one of the reasons
+behind your smile. ❤️
+</b>
+</p>
+
+<button onclick="finalSurprise()">
+🌹 One Last Surprise
+</button>
+
+<div id="finalSurprise"></div>
+
+<button onclick="go('final')">
+❤️ Finish Our Story
+</button>
+
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section id="final" class="section">
+
+<div class="card">
+
+<div class="rose">🌹</div>
+
+<h1>Happy Anniversary</h1>
+
+<h2>Ramsii ❤️</h2>
+
+<div class="date">
+16 September 2024
+</div>
+
+<p>
+No arguments.
+</p>
+
+<p>
+No ego.
+</p>
+
+<p>
+No pressure.
+</p>
+
+<p>
+Just one honest heart saying...
+</p>
+
+<h2>
+I'm Sorry ❤️
+</h2>
+
+<p>
+And I still want to make you laugh,
+make you smile,
+pamper you,
+and create many more beautiful memories with you.
+</p>
+
+<p>
+You are not just a name in my phone.
+</p>
+
+<p>
+You are <b>Ramsii</b>,
+my <b>Praneshwari</b>,
+my <b>Pran Vallabha</b>,
+my <b>Priyadarshini</b>...
+</p>
+
+<p>
+and someone who holds
+a very special place in my heart. ❤️
+</p>
+
+<p>
+Thank you for being a part
+of my story.
+</p>
+
+<p>
+Happy Anniversary, Ramsii. ❤️
+</p>
+
+<h2>
+Tumhara Deepu ❤️
+</h2>
+
+<footer>
+Made with love for Ramsii ❤️
+</footer>
+
+</div>
+
+</section>
+
+
+<script>
+
+
+function go(id){
+
+  document.querySelectorAll(".section").forEach(function(sec){
+
+    sec.classList.remove("active");
+
+  });
+
+  document.getElementById(id).classList.add("active");
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+
+function playSong(){
+
+  const song=document.getElementById("song");
+
+  const text=document.getElementById("musicText");
+
+  song.volume=1.0;
+
+  song.play().then(function(){
+
+    text.innerHTML=
+    "🎵 Our song is playing… ❤️";
+
+  }).catch(function(error){
+
+    text.innerHTML=
+    "Song nahi mila. Please check that <b>our-song.mp3</b> is in the same folder as index.html.";
+
+    console.log("Audio error:",error);
+
+  });
+
+}
+
+
+function openEnvelope(){
+
+  const envelope=
+  document.getElementById("envelopeBox");
+
+  envelope.classList.toggle("opened");
+
+  const secret=
+  document.getElementById("secretLetter");
+
+  if(envelope.classList.contains("opened")){
+
+    secret.style.display="block";
+
+    setTimeout(function(){
+
+      secret.style.opacity="1";
+
+      secret.style.transform="translateY(0)";
+
+    },100);
+
+  }
+  else{
+
+    secret.style.opacity="0";
+
+    secret.style.transform="translateY(20px)";
+
+    setTimeout(function(){
+
+      secret.style.display="none";
+
+    },500);
+
+  }
+
+}
+
+
+function gujaratiSurprise(){
+
+  const box=
+  document.getElementById("gujaratiSurprise");
+
+  box.style.display="block";
+
+  box.innerHTML=`
+
+    <div class="surpriseBox">
+
+      <h2>❤️ Ramsii...</h2>
+
+      <p>
+      Aa bas ek button nathi...
+      aa mari dil ni ek nani si vaat chhe.
+      </p>
+
+      <p>
+      Hu nathi ichhto ke aapde koi pan fight pachi
+      ek bija thi naraj thai ne sui jaiye.
+      </p>
+
+      <p>
+      Koi ek toh thodu ego side ma muki ne
+      bija pase aavi ne kahi de...
+      <b>"Chal, badhu bhuli jaie ❤️"</b>
+      </p>
+
+      <p>
+      Life khub nani chhe Ramsii...
+      ane je vyakti ne aapde khush jovu hoy
+      eni sathe ladva ma aapdu time waste na thavu joie.
+      </p>
+
+      <p>
+      Aaje thi thodu vadhu sukoon,
+      thodu vadhu pampering,
+      thodu vadhu understanding
+      ane ghanu badhu love. 🫰❤️
+      </p>
+
+    </div>
+
+  `;
+
+  heartBurst();
+
+}
+
+
+function finalSurprise(){
+
+  const box=
+  document.getElementById("finalSurprise");
+
+  box.style.display="block";
+
+  box.innerHTML=`
+
+    <div class="surpriseBox">
+
+      <div class="rose">🌹</div>
+
+      <h2>Ramsii ❤️</h2>
+
+      <p>
+      Hu perfect banvanu promise nathi karto...
+      pan hu better banvanu promise karu chhu.
+      </p>
+
+      <p>
+      Jyare tu hurt hoy tyare tane samajhvani
+      koshish karish.
+      </p>
+
+      <p>
+      Jyare ego ane feelings vachche choice karvani aavshe,
+      tyare tari feelings ne importance aapish.
+      </p>
+
+      <p>
+      Fakat words thi nahi...
+      mara actions thi tane feel karavish
+      ke tu mara mate ketli important chhe.
+      </p>
+
+      <p>
+      Ane sauthi important...
+      hu tari smile nu ek reason banva mangu chhu. ❤️
+      </p>
+
+      <p>
+      Aa varse shayad badhu perfect rite
+      cake ke celebration sathe na thayu hoy...
+      pan hu ichchhu chhu ke jyare tu aa page yaad kare,
+      tyare tara face par ek smile aave
+      ane tu kahe...
+      </p>
+
+      <p>
+      <b>
+      "He really tried to make me smile." ❤️
+      </b>
+      </p>
+
+    </div>
+
+  `;
+
+  heartBurst();
+
+}
+
+
+function createHeart(){
+
+  const heart=
+  document.createElement("div");
+
+  heart.innerHTML="❤️";
+
+  heart.style.position="fixed";
+
+  heart.style.left=
+  (Math.random()*100)+"vw";
+
+  heart.style.bottom="-30px";
+
+  heart.style.fontSize=
+  (15+Math.random()*25)+"px";
+
+  heart.style.zIndex="999";
+
+  heart.style.pointerEvents="none";
+
+  heart.style.animation=
+  "floatUp "+(4+Math.random()*4)+"s ease-out forwards";
+
+  document.body.appendChild(heart);
+
+  setTimeout(function(){
+
+    heart.remove();
+
+  },8000);
+
+}
+
+
+setInterval(createHeart,500);
+
+
+function heartBurst(){
+
+  for(let i=0;i<25;i++){
+
+    const heart=
+    document.createElement("div");
+
+    heart.innerHTML="❤️";
+
+    heart.style.position="fixed";
+
+    heart.style.left=
+    (30+Math.random()*40)+"vw";
+
+    heart.style.top=
+    (40+Math.random()*20)+"vh";
+
+    heart.style.fontSize=
+    (15+Math.random()*25)+"px";
+
+    heart.style.zIndex="999";
+
+    heart.style.pointerEvents="none";
+
+    heart.style.animation=
+    "floatUp 3s ease-out forwards";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+
+      heart.remove();
+
+    },3000);
+
+  }
+
+}
+
+
+</script>
+
+</body>
+</html>
